@@ -9,7 +9,7 @@ interface AnimeDetailProps {
 
 const AnimeDetail: React.FC<AnimeDetailProps> = ({ anime, onBack }) => {
   const handleDownload = () => {
-    // Open animepahe.ru with the specific anime
+    // Open animepahe.ru with the specific anime UUID
     const animepaheUrl = `https://animepahe.ru/anime/${anime.animepaheSlug}`;
     window.open(animepaheUrl, '_blank');
   };
